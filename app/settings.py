@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
      # MyApps
     'bases',
+    'inv',
 ]
 
 MIDDLEWARE = [
