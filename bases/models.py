@@ -1,11 +1,12 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class ClaseModelo(models.Model):
     estado = models.BooleanField(default=True)
-    fecha_creacion = models.DateTimeField(auto_now_add=True)
-    fecha_modificacion = models.DateTimeField(auto_now=True)
-    usuario_creacion = models.CharField(max_length=50)
-    usuario_modificacion = models.CharField(max_length=50)
+    fc = models.DateTimeField(auto_now_add=True)
+    fm = models.DateTimeField(auto_now=True)
+    uc = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+    um = models.IntegerField(blank=True, null=True)
 
     class Meta:
         abstract = True
