@@ -1,3 +1,5 @@
+Curso : https://www.udemy.com/course/sistema-de-compra-y-facturacion-con-python-usando-django/learn/lecture/14648928#overview
+
 
 # Creamos el entorno virtual.
 ```
